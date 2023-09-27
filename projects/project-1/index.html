@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Urbanist:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: rgba(33, 45, 64, 1);
+            font-size: 20pt;
+            font-family: 'Urbanist', sans-serif;
+            margin: 0;
+            background-color: rgba(220, 204, 142, 0.27);
+        }
+        .header-footer {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(141, 197, 152, 1);
+            width: 1920px;
+            height: 90px;
+        }
+        #header-info {
+            padding-left: 20px;
+            font-family: 'Raleway', sans-serif;
+        }
+        #title-pic {
+            color: #212D40;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: 'Raleway', 'Urbanist', sans-serif;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            width: 1920px;
+            height: 790px;
+            flex-shrink: 0;
+            background: url('harrisburg.jpg'), lightgray 50% / cover no-repeat; 
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        #welcome-message {
+            width: 895px;
+            margin: auto;
+            height: auto;
+            text-align: center;
+        }
+        .title-holder {
+            margin-top: 10px;
+            display: flex;
+            text-align: center;
+        }
+        .title-holder div {
+            margin-top: 100px;
+            flex-basis: 100%;
+            height: 45px;
+        }
+        .title-holder h2 {
+            margin: 0;
+        }
+        .title-holder div:first-child {
+            background-color: rgba(141, 197, 152, 1);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .title-holder div:last-child {
+            background-color: rgba(141, 197, 152, 1);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1625px;
+            height: 565px;
+            margin: 100px auto;
+        }
+            .image-holder {
+                background-color: palegreen;
+                width: 870px;
+                height: 565px;
+                margin-left: 21px;
+                margin-right: 21px;
+            }
+            .description {
+                width: 715px;
+                height: auto;
+                margin-left: 21px;
+                margin-right: 21px;
+            }
+        .alternate{
+            flex-direction: row-reverse;
+        }
+        #footer-info {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-footer"><h2 id="header-info">Central PA Adventures</h2></div>
+    <div id="title-pic">Central PA Adventures Await!</div>
+    <div id="welcome-message"><h2>Welcome to Central Pennsylvania</h2>
+        <p>Central Pennsylvania offers a wide variety of attractions from amusement parks, to cultural experiences, historical sites, and much more. We have something for everyone! Explore the many options today Central PA awaits!</p></div>
+    <div class="title-holder">
+        <div></div>
+        <div><h2>Featured Attractions</h2></div>
+        <div></div>
+    </div>
+    <div class="row alternate">
+        <div class="image-holder">
+            <img src="hershey park.jpg" alt="Hershey Park" />
+        </div>
+        <div class="description">
+            <h3>Hershey Park</h3>
+            <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+            <a href="https://www.hersheypark.com" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-holder">
+            <img src="gettysburg national military park.jpg" alt="Gettysburg National Military Park" />
+        </div>
+        <div class="description">
+            <h3>Gettysburg National Military Park</h3>
+            <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p>
+            <a href="https://www.nps.gov/gett/index.htm" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row alternate">
+        <div class="image-holder">
+            <img src="state cap.jpg" alt="Pennsylvania State Capitol" />
+        </div>
+        <div class="description">
+            <h3>Pennsylvania State Capitol</h3>
+            <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
+            <a href="http://www.pacapitol.com/" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-holder">
+            <img src="raystown lake.jpg" alt="Raystown Lake" />
+        </div>
+        <div class="description">
+            <h3>Raystown Lake</h3>
+            <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
+            <a href="https://www.nab.usace.army.mil/Missions/Dams-Recreation/raystown/" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row alternate">
+        <div class="image-holder">
+            <img src="railroad museum.JPG" alt="Railroad Museum of Pennsylvania" />
+        </div>
+        <div class="description">
+            <h3>Railroad Museum of Pennsylvania</h3>
+            <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
+            <a href="https://www.rrmuseumpa.org/" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-holder">
+            <img src="central york market.JPG" alt="Central York Market" />
+        </div>
+        <div class="description">
+            <h3>Central York market</h3>
+            <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
+            <a href="https://www.centralmarketyork.com/" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row alternate">
+        <div class="image-holder">
+            <img src="pine grove furnace.jpg" alt="Pine Grove Furnace State Park" />
+        </div>
+        <div class="description">
+            <h3>Pine Grove Furnace State Park</h3>
+            <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
+            <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark/Pages/default.aspx" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-holder">
+            <img src="worlds end.jpg" alt="Worlds End State Park" />
+        </div>
+        <div class="description">
+            <h3>Worlds End State Park</h3>
+            <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
+            <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark/Pages/default.aspx" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row alternate">
+        <div class="image-holder">
+            <img src="lewisburg.jpg" alt="Lewisburg" />
+        </div>
+        <div class="description">
+            <h3>Lewisburg</h3>
+            <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
+            <a href="https://www.lewisburgpa.com/" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-holder">
+            <img src="pine creek gorge.jpg" alt="Pennsylvania Grand Canyon" />
+        </div>
+        <div class="description">
+            <h3>The Pennsylvania Grand Canyon</h3>
+            <p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
+            <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark/Pages/default.aspx" target="_blank"><strong>Visit Website</strong></a>
+        </div>
+    </div>
+    <div class="header-footer" id="footer-info">Central PA Adventures | ©Copyright. All Rights Reserved</div>
+</body>
+</html>
