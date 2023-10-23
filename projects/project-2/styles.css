@@ -55,9 +55,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-    #hero-words {
-        background-color: rgba(253, 248, 194, 0.32);
-    }
 #info {
     margin: auto;
     font-size: 32px;
@@ -76,7 +73,7 @@ a {
     margin-bottom: 0;
     height: 55px;
     width: 100%;
-    background-color: #FDF8C2;
+    background-color: #FDF8C2
 }
 .footer-info {
     text-align: center;
