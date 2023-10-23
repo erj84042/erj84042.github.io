@@ -55,6 +55,9 @@ a {
     justify-content: center;
     align-items: center;
 }
+    #hero-words {
+        background-color: rgba(253, 248, 194, 0.32);
+    }
 #info {
     margin: auto;
     font-size: 32px;
