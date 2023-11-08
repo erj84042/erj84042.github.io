@@ -36,35 +36,47 @@
       header {
         padding: var(--padding-small);
         background-color: var(--base-gray);
+      }
         #logo {
           width: var(--header-width);
+          height: 100%;
+        }
           h1 {
             margin: 0;
           }
+        #nav ul {
+          margin: 0;
+          padding: 0;
         }
-        nav {
+        #nav li {
+          list-style: none;
+          display: inline-block;
+          border: 1px darkslategrey;
+        }
+        #nav li a {
+          border: .5px darkslategray;
+          color: darkslategray;
+          background-color: white;
+          text-decoration: none;
           text-align: right;
           width: calc(100% - var(--header-width));
-
-
-          ul {
-            margin: 0;
-          }
-          li {
-            display: inline;
-          }
-          a {
-            padding: var(--padding-medium);
-          }
         }
-      }
+        #nav li a:hover {
+          background-color: #fff;
+          color: bisque;
+        }
+        #toggle-nav {
+          display: none;
+          position: absolute;
+          right: 1em;
+          top: 1em;
+        }
       main {
         max-width: 1200px;
         margin: 1em auto;
         min-height: 400px;
         background-color: #fff;
         padding: var(--gap);
-
 
         .row {
           margin: var(--margin-medium);
@@ -94,15 +106,39 @@
         justify-content: space;
       }
       @media screen and (max-width: 500px) {
+        body .nav-open #nav {
+          grid-template-rows: 1fr;
+        }
+        .header-row {
+          flex-direction: column;
+        }
+        #nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #nav li {
+          display: block;
+        }
+        #toggle-nav {
+          display: block;
+          background-color: antiquewhite;
+        }
+        .inner {
+          overflow: hidden;
+          text-align: right;
+        }
         body {
             background-color: cornflowerblue;
         }
         .row {
             flex-direction: column;
+            display: block;
             width: fit-content;
         }
         #logo {
-            text-align: center;
+          width: 100%;
+          text-align: center;
         }
         #hero-image {
             width: fit-content;
@@ -114,22 +150,23 @@
       }
     </style>
   </head>
-  <body>
+  <body class="nav-open">
+    <button id="toggle-nav">☰</button>
     <!-- Header -->
     <header>
       <div class="row">
         <div id="logo"><h1>Learning Poker</h1></div>
-        <nav>
+        <nav id="nav" role="navigation">
+          <div class="inner">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Texas-Hold'em.html">Texas Hold'em</a></li>
             <li><a href="Popular-Poker-Variants.html">Popular Poker Variants</a></li>
           </ul>
+          </div>
         </nav>
       </div>
     </header>
-
-
     <main>
       <!-- INTRO -->
       <div class="row">
@@ -164,5 +201,22 @@
         </figure>
       </div>
     </main>
+    <script>
+      // Perform this after the window has loaded
+      window.onload = () => {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        const toggleNav = document.getElementById('toggle-nav');
+        toggleNav.innerHTML = '&#9776;';
+
+        // Tell button to do something on click
+        toggleNav.addEventListener('click', () => {
+          // toggle the body's class attribute
+          document.body.classList.toggle('nav-open');
+          toggleNav.innerHTML = document.body.classList.contains('nav-open')
+            ? '&#x2715'
+            : '&#9776;';
+        });
+      };
+    </script>
   </body>
 </html>
