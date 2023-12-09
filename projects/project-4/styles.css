@@ -108,9 +108,13 @@ body {
   header {
     background-color: #DBC1AC;
   }
+  .flex {
+    display: flex;
+  }
   nav {
     text-align: right;
     justify-content: space-evenly;
+    width: calc(100%-280px);
   }
   nav ul {
     margin: 0;
@@ -151,6 +155,9 @@ body {
   }
   #message {
     text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #message-logo {
     display: block;
@@ -269,16 +276,30 @@ body {
         margin-right: auto;
     }
   }
-  @media (max-width: 720px) {
+  @media (max-width: 860px) {
     .row {
         flex-direction: column;
         display: block;
         width: fit-content;
+        text-align: center;
     }
   }
   @media (max-width: 600px) {
     .info {
       margin-bottom: 25px;
       width: 400px;
+    }
+  }
+  @media ( max-width:860) {
+    #title-holder h1 {
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 60px;
+      padding-right: 60px;
+      background-color: #F6F1EA;
+      margin: 0;
+      margin-bottom: 20px;
+      font-family: 'Zilla Slab', slab-serif, serif;
     }
   }
