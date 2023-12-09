@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #drink-menu{
+            width: 300px;
+        }
+        #drink-menu ul {
+            list-style-type: none;
+        }
+        #drink-menu li {
+            background-color: aliceblue;
+            margin-bottom: 10px;
+        }
+        #drink-menu li > span {
+            background-color: lightgreen;
+            float: right;
+        }
+        .dl-example{
+            max-width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dl-example dl {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+        }
+        .dl-example dt {
+            width: 70%;
+        }
+        .dl-example dd {
+            margin: 0;
+            width: 30%;
+            text-align: right;
+        }
+        ul.flavors {
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul.flavors li{
+            background-color: lightgrey;
+            list-style: none;
+            width: 50%;
+            margin-bottom: 5px;
+        }
+        @media (max-width: 550px) {
+            ul.flavors li {
+                width: 100%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>espresso <span>$2.50</span></li>
+            <li>americano <span>$3.50</span></li>
+        </ul>
+    </div>
+    <div class="about equal-columns">
+        <div class="dl-example">
+            <dl>
+                <dt>Espresso</dt>
+                <dd>$2.50</dd>
+                <dt>Americano</dt>
+                <dd>$3.50</dd>
+                <dt>Latte</dt>
+                <dd>$4.00</dd>
+                <dt>Cappuccino</dt>
+                <dd>$5.00</dd>
+                <dt>Mocha</dt>
+                <dd>$4.50</dd>
+                <dt>Macchiato</dt>
+                <dd>$4.50</dd>
+                <dt>Flat White</dt>
+                <dd>$4.50</dd>
+                <dt>Iced Coffee</dt>
+                <dd>$4.00</dd>
+            </dl>
+        </div>
+        <div class="dl-example">
+            <dl>
+                <dt>Cold Brew</dt>
+                <dd>$4.50</dd>
+                <dt>Frappuccino</dt>
+                <dd>$5.00</dd>
+                <dt>Hot Chocolate</dt>
+                <dd>$3.50</dd>
+                <dt>Chai Tea Latte</dt>
+                <dd>$4.50</dd>
+                <dt>Matcha Latte</dt>
+                <dd>$4.50</dd>
+                <dt>Herbal Tea</dt>
+                <dd>$3.00</dd>
+                <dt>Iced Tea</dt>
+                <dd>$3.50</dd>
+                <dt>Smoothie</dt>
+                <dd>$5.00</dd>
+            </dl>
+        </div>
+    </div>
+    
+    <table>
+        <tr>
+            <td>espresso</td>
+            <td>$2.50</td>
+        </tr>
+        <tr>
+            <td>americano</td>
+            <td>$3.50</td>
+        </tr>
+    </table>
+    <hr />
+    <div class="menu-lists">
+        <ul class="flavors">
+            <li>Vanilla</li>
+            <li>Hazelnut</li>
+            <li>Chocolate</li>
+            <li>White Mocha</li>
+            <li>Caramel</li>
+            <li>Simple Syrup</li>
+            <li>Brown Sugar</li>
+            <li>Butter Pecan</li>
+            <li>Toffee Nut</li>
+            <li>Pumpkin</li>
+            <li>Almond</li>
+            <li>Lavender</li>
+            <li>Cinnamon</li>
+            <li>Peppermint</li>
+            <li>Honey</li>
+            <li>Rose</li>
+        </ul>
+    </div>
+   
+</body>
+</html>
